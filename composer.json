@@ -10,7 +10,10 @@
         "zelenin/smsru": "^4.1",
         "twilio/sdk": "^5.0",
         "plivo/plivo-php": "^1.1",
-        "sunra/turbosms-soapgate-client-php": "dev-master"
+        "sunra/turbosms-soapgate-client-php": "dev-master",
+        "connect-corp/nexmo-client": "dev-master",
+        "camcima/tropo-webapi-php": "dev-master",
+        "arcturial/clickatell": "^2.1"
     },
     "autoload": {
         "psr-4": { "Andreybolonin\\SmsGatewayBundle\\": "" }
