@@ -1,0 +1,16 @@
+/app/bootstrap.php.cache
+/app/cache/*
+!app/cache/.gitkeep
+/app/config/parameters.yml
+/app/config/servers.yml
+/app/logs/*
+!app/logs/.gitkeep
+/app/phpunit.xml
+/composer.phar
+/vendor/
+/web/bundles/
+/.idea
+*.php~
+/var/cache/*
+/var/logs/*
+/JavaApplication1/nbproject/private/
