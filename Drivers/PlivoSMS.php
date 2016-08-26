@@ -3,7 +3,7 @@
 namespace SmsGatewayBundle\Drivers;
 
 use Plivo\RestAPI as Plivo;
-use SimpleSoftwareIO\SMS\OutgoingMessage;
+use SmsGatewayBundle\OutgoingMessage;
 
 class PlivoSMS extends AbstractSMS implements DriverInterface
 {

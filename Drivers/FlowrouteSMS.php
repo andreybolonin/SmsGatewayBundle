@@ -2,8 +2,8 @@
 namespace SmsGatewayBundle\Drivers;
 
 use GuzzleHttp\Client;
-use SimpleSoftwareIO\SMS\MakesRequests;
-use SimpleSoftwareIO\SMS\OutgoingMessage;
+use SmsGatewayBundle\MakesRequests;
+use SmsGatewayBundle\OutgoingMessage;
 
 class FlowrouteSMS extends AbstractSMS implements DriverInterface
 {
@@ -38,7 +38,7 @@ class FlowrouteSMS extends AbstractSMS implements DriverInterface
   /**
      * Sends a SMS message.
      *
-     * @param \SimpleSoftwareIO\SMS\OutgoingMessage $message
+     * @param \SmsGatewayBundle\OutgoingMessage $message
      * @return void
      */
     public function send(OutgoingMessage $message)
@@ -78,7 +78,7 @@ class FlowrouteSMS extends AbstractSMS implements DriverInterface
      * Gets a single message by it's ID.
      *
      * @param string|int $messageId
-     * @return \SimpleSoftwareIO\SMS\IncomingMessage
+     * @return \SmsGatewayBundle\IncomingMessage
      */
     public function getMessage($messageId)
     {
@@ -91,7 +91,7 @@ class FlowrouteSMS extends AbstractSMS implements DriverInterface
      * Receives an incoming message via REST call.
      *
      * @param mixed $raw
-     * @return \SimpleSoftwareIO\SMS\IncomingMessage
+     * @return \SmsGatewayBundle\IncomingMessage
      */
     public function receive($raw)
     {

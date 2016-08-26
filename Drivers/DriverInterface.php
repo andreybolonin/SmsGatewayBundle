@@ -2,14 +2,14 @@
 
 namespace SmsGatewayBundle\Drivers;
 
-use SimpleSoftwareIO\SMS\OutgoingMessage;
+use SmsGatewayBundle\OutgoingMessage;
 
 interface DriverInterface
 {
     /**
      * Sends a SMS message.
      *
-     * @param \SimpleSoftwareIO\SMS\OutgoingMessage $message
+     * @param \SmsGatewayBundle\OutgoingMessage $message
      */
     public function send(OutgoingMessage $message);
 
@@ -27,7 +27,7 @@ interface DriverInterface
      *
      * @param string|int $messageId
      *
-     * @return \SimpleSoftwareIO\SMS\IncomingMessage
+     * @return \SmsGatewayBundle\IncomingMessage
      */
     public function getMessage($messageId);
 
@@ -36,7 +36,7 @@ interface DriverInterface
      *
      * @param mixed $raw
      *
-     * @return \SimpleSoftwareIO\SMS\IncomingMessage
+     * @return \SmsGatewayBundle\IncomingMessage
      */
     public function receive($raw);
 }

@@ -3,9 +3,9 @@
 namespace SmsGatewayBundle\Drivers;
 
 use GuzzleHttp\Client;
-use SimpleSoftwareIO\SMS\MakesRequests;
-use SimpleSoftwareIO\SMS\DoesNotReceive;
-use SimpleSoftwareIO\SMS\OutgoingMessage;
+use SmsGatewayBundle\MakesRequests;
+use SmsGatewayBundle\DoesNotReceive;
+use SmsGatewayBundle\OutgoingMessage;
 
 class LabsMobileSMS extends AbstractSMS implements DriverInterface
 {

@@ -4,17 +4,19 @@ namespace SmsGatewayBundle\SMS;
 
 use Closure;
 //use Illuminate\Support\Str;
-//use SuperClosure\Serializer;
+use SuperClosure\Serializer;
 //use Illuminate\Queue\QueueManager;
 //use Illuminate\Container\Container;
+use SmsGatewayBundle\DriverManager;
 use SmsGatewayBundle\Drivers\DriverInterface;
+use SmsGatewayBundle\OutgoingMessage;
 
 class SMS
 {
     /**
      * The Driver Interface instance.
      *
-     * @var \SimpleSoftwareIO\SMS\Drivers\DriverInterface
+     * @var \SmsGatewayBundle\Drivers\DriverInterface
      */
     protected $driver;
 
@@ -70,7 +72,7 @@ class SMS
      * @param array    $data     The data that needs to be passed into the view.
      * @param \Closure $callback The methods that you wish to fun on the message.
      *
-     * @return \SimpleSoftwareIO\SMS\OutgoingMessage The outgoing message that was sent.
+     * @return \SmsGatewayBundle\OutgoingMessage The outgoing message that was sent.
      */
     public function send($view, $data, $callback)
     {
@@ -90,7 +92,7 @@ class SMS
     /**
      * Creates a new Message instance.
      *
-     * @return \SimpleSoftwareIO\SMS\OutgoingMessage
+     * @return \SmsGatewayBundle\OutgoingMessage
      */
     protected function createOutgoingMessage()
     {

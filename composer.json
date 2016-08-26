@@ -7,6 +7,7 @@
     "require": {
         "php": ">=5.5.9",
         "symfony/framework-bundle": "~2.8|~3.0",
+        "guzzlehttp/guzzle": "~6",
         "zelenin/smsru": "^4.1",
         "twilio/sdk": "^5.0",
         "plivo/plivo-php": "^1.1",
