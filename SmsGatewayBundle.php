@@ -1,6 +1,6 @@
 <?php
 
-namespace Andreybolonin\SmsGatewayBundle;
+namespace SmsGatewayBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
