@@ -1,5 +1,5 @@
 {
-    "name": "andreybolonin/smsgateway-bundle",
+    "name": "andreybolonin/sms-gateway-bundle",
     "type": "symfony-bundle",
     "description": "Symfony SmsGatewayBundle",
     "keywords": ["smsgatewaybundle"],
