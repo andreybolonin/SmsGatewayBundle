@@ -14,4 +14,3 @@ http://symfony.com/doc/current/contributing/code/standards.html
 
 And clean your code with this tool
 https://github.com/FriendsOfPHP/PHP-CS-Fixer
-
