@@ -1,6 +1,10 @@
 Bundle for Symfony 2/3 which provides SMS gateways to many SMS providers like 
 https://github.com/SimpleSoftwareIO/simple-sms for Laravel applications.
 
+# Providers
+
+Nexmo, Twilio, Clickatell, Plivo, Tropo, TurboSMS, SMSRU.
+
 # Installation
 
 ```sh
