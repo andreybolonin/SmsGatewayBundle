@@ -60,7 +60,7 @@ class DriverManager extends Manager
         $config = $this->app['config']->get('sms.callfire', []);
 
         $provider = new CallFireSMS(
-            new Client,
+            new Client(),
             $config['app_login'],
             $config['app_password']
         );
@@ -178,11 +178,11 @@ class DriverManager extends Manager
         );
     }
 
-    /**
-     * Create an instance of the Zenvia driver.
-     *
-     * @return ZenviaSMS
-     */
+     /**
+      * Create an instance of the Zenvia driver.
+      *
+      * @return ZenviaSMS
+      */
      protected function createZenviaDriver()
      {
          $config = $this->app['config']->get('sms.zenvia', []);
@@ -215,7 +215,7 @@ class DriverManager extends Manager
     }
 
     /**
-     * Create an instance of the flowroute driver
+     * Create an instance of the flowroute driver.
      *
      * @return FlowrouteSMS
      */
@@ -224,7 +224,7 @@ class DriverManager extends Manager
         $config = $this->app['config']->get('sms.flowroute', []);
 
         $provider = new FlowrouteSMS(
-            new Client,
+            new Client(),
             $config['access_key'],
             $config['secret_key']
         );

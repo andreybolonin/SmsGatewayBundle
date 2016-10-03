@@ -68,11 +68,11 @@ class SMS
     /**
      * Send a SMS.
      *
-     * @param string   $view     The desired view.
-     * @param array    $data     The data that needs to be passed into the view.
-     * @param \Closure $callback The methods that you wish to fun on the message.
+     * @param string   $view     The desired view
+     * @param array    $data     The data that needs to be passed into the view
+     * @param \Closure $callback The methods that you wish to fun on the message
      *
-     * @return \SmsGatewayBundle\OutgoingMessage The outgoing message that was sent.
+     * @return \SmsGatewayBundle\OutgoingMessage The outgoing message that was sent
      */
     public function send($view, $data, $callback)
     {
@@ -129,10 +129,10 @@ class SMS
     /**
      * Queues a SMS message.
      *
-     * @param string          $view     The desired view.
-     * @param array           $data     An array of data to fill the view.
-     * @param \Closure|string $callback The callback to run on the Message class.
-     * @param null|string     $queue    The desired queue to push the message to.
+     * @param string          $view     The desired view
+     * @param array           $data     An array of data to fill the view
+     * @param \Closure|string $callback The callback to run on the Message class
+     * @param null|string     $queue    The desired queue to push the message to
      */
     public function queue($view, $data, $callback, $queue = null)
     {
@@ -144,10 +144,10 @@ class SMS
     /**
      * Queues a SMS message to a given queue.
      *
-     * @param null|string     $queue    The desired queue to push the message to.
-     * @param string          $view     The desired view.
-     * @param array           $data     An array of data to fill the view.
-     * @param \Closure|string $callback The callback to run on the Message class.
+     * @param null|string     $queue    The desired queue to push the message to
+     * @param string          $view     The desired view
+     * @param array           $data     An array of data to fill the view
+     * @param \Closure|string $callback The callback to run on the Message class
      */
     public function queueOn($queue, $view, $data, $callback)
     {
@@ -158,10 +158,10 @@ class SMS
      * Queues a message to be sent a later time.
      *
      * @param int             $delay    The desired delay in seconds
-     * @param string          $view     The desired view.
-     * @param array           $data     An array of data to fill the view.
-     * @param \Closure|string $callback The callback to run on the Message class.
-     * @param null|string     $queue    The desired queue to push the message to.
+     * @param string          $view     The desired view
+     * @param array           $data     An array of data to fill the view
+     * @param \Closure|string $callback The callback to run on the Message class
+     * @param null|string     $queue    The desired queue to push the message to
      */
     public function later($delay, $view, $data, $callback, $queue = null)
     {
@@ -173,11 +173,11 @@ class SMS
     /**
      * Queues a message to be sent a later time on a given queue.
      *
-     * @param null|string     $queue    The desired queue to push the message to.
+     * @param null|string     $queue    The desired queue to push the message to
      * @param int             $delay    The desired delay in seconds
-     * @param string          $view     The desired view.
-     * @param array           $data     An array of data to fill the view.
-     * @param \Closure|string $callback The callback to run on the Message class.
+     * @param string          $view     The desired view
+     * @param array           $data     An array of data to fill the view
+     * @param \Closure|string $callback The callback to run on the Message class
      */
     public function laterOn($queue, $delay, $view, $data, $callback)
     {
@@ -193,7 +193,7 @@ class SMS
      */
     protected function buildQueueCallable($callback)
     {
-        if ( ! $callback instanceof Closure) {
+        if (!$callback instanceof Closure) {
             return $callback;
         }
 
@@ -257,9 +257,9 @@ class SMS
     /**
      * Queries the provider for a list of messages.
      *
-     * @param array $options The options to pass onto a provider.  See each provider for a list of options.
+     * @param array $options The options to pass onto a provider.  See each provider for a list of options
      *
-     * @return array Returns an array of IncomingMessage objects.
+     * @return array Returns an array of IncomingMessage objects
      */
     public function checkMessages(array $options = array())
     {
@@ -269,7 +269,7 @@ class SMS
     /**
      * Gets a message by it's ID.
      *
-     * @param $messageId The requested messageId.
+     * @param $messageId The requested messageId
      *
      * @return IncomingMessage
      */

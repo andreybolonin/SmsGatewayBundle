@@ -104,8 +104,8 @@ class OutgoingMessage
     /**
      * Sets the to addresses.
      *
-     * @param string $number  Holds the number that a message will be sent to.
-     * @param string $carrier The carrier the number is on.
+     * @param string $number  Holds the number that a message will be sent to
+     * @param string $carrier The carrier the number is on
      *
      * @return $this
      */
@@ -157,7 +157,7 @@ class OutgoingMessage
     /**
      * Sets the data for the view file.
      *
-     * @param array $data An array of values to be passed to the View Factory.
+     * @param array $data An array of values to be passed to the View Factory
      */
     public function data($data)
     {
@@ -187,7 +187,7 @@ class OutgoingMessage
     /**
      * Attaches an image to a message.
      *
-     * @param string $image Path to image.
+     * @param string $image Path to image
      */
     public function attachImage($image)
     {

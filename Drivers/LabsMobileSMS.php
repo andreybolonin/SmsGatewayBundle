@@ -38,7 +38,7 @@ class LabsMobileSMS extends AbstractSMS implements DriverInterface
     /**
      * Sends a SMS message.
      *
-     * @param OutgoingMessage $message The SMS message instance.
+     * @param OutgoingMessage $message The SMS message instance
      */
     public function send(OutgoingMessage $message)
     {

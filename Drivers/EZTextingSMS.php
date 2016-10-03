@@ -1,4 +1,5 @@
 <?php
+
 namespace SmsGatewayBundle\Drivers;
 
 use GuzzleHttp\Client;

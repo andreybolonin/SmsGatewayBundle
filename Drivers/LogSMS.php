@@ -11,7 +11,7 @@ class LogSMS implements DriverInterface
     use DoesNotReceive;
 
     /**
-     * Laravel Logger
+     * Laravel Logger.
      *
      * @var \GuzzleHttp\Client
      */
